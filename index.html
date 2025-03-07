@@ -10,14 +10,62 @@
     />
     <meta name="author" content="Anna Abbott" />
 
-    <link href="styles/normalize.css" rel="stylesheet">
-    <link href="styles/small.css" rel="stylesheet">
-    <link href="styles/large.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet" />
+    <link href="styles/small.css" rel="stylesheet" />
+    <link href="styles/large.css" rel="stylesheet" />
+    <script src="scripts/index.js" defer></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="flexContainer">
+      <img src="images/profile-200x200.jpg" alt="Anna Abbott" />
+      <span><h1>Anna Abbott</h1></span>
+    </header>
+    <nav class="navContainer">
+      <ul>
+        <li><a href="#" id="menu-home">Home</a></li>
+        <li><a href="#" id="menu-old">Chamber</a></li>
+        <li>
+          <a href="https://github.com/annaabbott" id="menu-new"
+            >GitHub Profile</a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/annabestabbott/" id="menu-large"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+      <div class="closeBox">
+        <a href="#"> &times;</a>
+      </div>
+    </nav>
+    <div class="hamburger">
+      <a href="#">
+        <img
+          src="images/bars-solid.svg"
+          width="32"
+          height="32"
+          alt="hamburger menu icon"
+        />
+      </a>
+    </div>
+
+    <main>
+      <h1>Home</h1>
+      <section><h2>Course Work</h2></section>
+      <section><h2>Waco, TX</h2></section>
+      <section><h2>Web and Computer Programming Certificate</h2></section>
+    </main>
+    <footer>
+      <p>&copy; <span id="currentyear"> </span> Anna Abbott | USA</p>
+      <p id="lastModified"></p>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,63 @@
+:root {
+  --base-text-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: var(--accent-color);
+  padding: 0.5rem;
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+
+nav .hamburger,
+nav .closeBox {
+  cursor: pointer;
+}
+
+nav.visible {
+  display: block;
+}
+
+div.closeBox {
+  font-size: 3rem;
+  position: absolute;
+  top: 0;
+  right: 1.3rem;
+  display: block;
+}
+
+li {
+  list-style-type: none;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover {
+  background-color: var(--secondary-color);
+}

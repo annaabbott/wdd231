@@ -1,0 +1,42 @@
+@media screen and (min-width: 320px) {
+  nav {
+    position: static;
+    display: block;
+    width: 60vw;
+    height: auto;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    font-size: 1.5rem;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  div.closeBox,
+  div.hamburger {
+    display: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    background-color: var(--accent-color);
+  }
+
+  .navContainer li {
+    display: block;
+    flex: 1 1 100%;
+  }
+  .navContainer a {
+    text-align: center;
+  }
+
+  .closeBox.visible::before {
+    display: none;
+  }
+}
