@@ -13,7 +13,7 @@
     <link href="styles/normalize.css" rel="stylesheet" />
     <link href="styles/small.css" rel="stylesheet" />
     <link href="styles/large.css" rel="stylesheet" />
-    <script src="scripts/index.js" defer></script>
+    <script src="scripts/indexPage.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -61,7 +61,8 @@
 
     <main>
       <h1>Home</h1>
-      <section><h2>Course Work</h2>
+      <section>
+        <h2>Course Work</h2>
         <ul>
           <li>Project 1</li>
           <li>Project 2</li>
@@ -72,8 +73,17 @@
         <h2>Waco, TX</h2>
         <img src="images/waco-cropped-resized.jpg" alt="Waco, TX" />
       </section>
-      <section><h2>Web and Computer Programming Certificate</h2>
-      
+      <section>
+        <h2>Web and Computer Programming Certificate</h2>
+        <div id="courseMenu">
+          <ul>
+            <li><a href="#" id="menu-all">All</a></li>
+            <li><a href="#" id="menu-wdd">WDD</a></li>
+            <li><a href="#" id="menu-cse">CSE</a></li>
+          </ul>
+        </div>
+        <p id="creditNum"></p>
+        <div id="courseContainer"></div>
       </section>
     </main>
     <footer>

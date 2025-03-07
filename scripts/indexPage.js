@@ -89,5 +89,52 @@ const courses = [
   },
 ];
 
+function createCourseCard(course) {
+  const courseContainer = document.querySelector("#courseContainer");
+  const card = document.createElement("div");
+  courseContainer.appendChild(card);
+  const courseName = document.createElement("p");
+  courseName.innerText = `${course.subject} ${course.number}`;
+  card.appendChild(courseName);
+}
+
+function showCourses(filterfunc) {
+  const courseContainer = document.querySelector("#courseContainer");
+  courseContainer.innerText = "";
+  courses.filter(filterfunc).forEach((course) => createCourseCard(course));
+}
+
+function showAll(course) {
+  return true;
+}
+
+function showWDD(course) {
+  const courseSubject = course.subject;
+  return courseSubject == "WDD";
+}
+
+function showCSE(course) {
+  const courseSubject = course.subject;
+  return courseSubject == "CSE";
+}
+
+allAnchor = document.querySelector("#menu-all");
+wddAnchor = document.querySelector("#menu-wdd");
+cseAnchor = document.querySelector("#menu-cse");
+
+allAnchor.addEventListener("click", () => {
+  showCourses(showAll);
+});
+
+wddAnchor.addEventListener("click", () => {
+  showCourses(showWDD);
+});
+
+cseAnchor.addEventListener("click", () => {
+  showCourses(showCSE);
+});
+
+showCourses(showAll);
+
 document.getElementById("currentyear").innerHTML = currentYear;
 document.getElementById("lastModified").innerHTML = modified;
