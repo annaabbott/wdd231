@@ -4,6 +4,9 @@
   font-weight: 400;
   font-style: normal;
   font-optical-sizing: auto;
+  --primary-color: #8BB3EE;
+  --secondary-color: #859769;
+  --neutral: #6C778E;
 }
 
 h1 {
