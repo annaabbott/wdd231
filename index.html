@@ -22,46 +22,45 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header class="flexContainer">
       <img src="images/profile-200x200.jpg" alt="Anna Abbott" />
       <span><h1>Anna Abbott</h1></span>
-      <nav class="navContainer">
-        <ul>
-          <li><a href="#" id="menu-home">Home</a></li>
-          <li><a href="#" id="menu-old">Chamber</a></li>
-          <li>
-            <a href="https://github.com/annaabbott" id="menu-new"
-              >GitHub Profile</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/annabestabbott/"
-              id="menu-large"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
-        <div class="closeBox">
-          <a href="#"> &times;</a>
-        </div>
-      </nav>
-      <div class="hamburger">
-        <a href="#">
-          <img
-            src="images/bars-solid.svg"
-            width="32"
-            height="32"
-            alt="hamburger menu icon"
-          />
-        </a>
-      </div>
     </header>
+    <nav class="navContainer">
+      <div class="closeBox">
+        <a href="#"> &times;</a>
+      </div>
+      <ul>
+        <li><a href="#" id="menu-home">Home</a></li>
+        <li><a href="#" id="menu-old">Chamber</a></li>
+        <li>
+          <a href="https://github.com/annaabbott" id="menu-new"
+            >GitHub Profile</a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/annabestabbott/" id="menu-large"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <a href="#">
+        <img
+          src="images/bars-solid.svg"
+          width="32"
+          height="32"
+          alt="hamburger menu icon"
+        />
+      </a>
+    </div>
 
     <main>
       <h1>Home</h1>
-      <section>
+      <section class="sectionCard" id="courseWork">
         <h2>Course Work</h2>
         <ul>
           <li>Project 1</li>
@@ -69,14 +68,14 @@
           <li>Project 3</li>
         </ul>
       </section>
-      <section>
+      <section class="sectionCard" id="waco">
         <h2>Waco, TX</h2>
         <img src="images/waco-cropped-resized.jpg" alt="Waco, TX" />
       </section>
-      <section>
+      <section class="sectionCard">
         <h2>Web and Computer Programming Certificate</h2>
         <div id="courseMenu">
-          <ul>
+          <ul class="courseMenuContainer">
             <li><a href="#" id="menu-all">All</a></li>
             <li><a href="#" id="menu-wdd">WDD</a></li>
             <li><a href="#" id="menu-cse">CSE</a></li>

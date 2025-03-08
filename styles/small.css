@@ -1,12 +1,19 @@
 :root {
-  --base-text-size: 16px;
+  font-size: 16px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-optical-sizing: auto;
-  --primary-color: #8BB3EE;
+  --primary-color: #8bb3ee;
   --secondary-color: #859769;
-  --neutral: #6C778E;
+  --neutral: #6c778e;
+  margin: 0;
+}
+
+header {
+  padding: 5rem 0;
+  background-color: var(--primary-color);
+  width: 100%;
 }
 
 h1 {
@@ -20,11 +27,10 @@ h1 {
 }
 
 nav {
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   right: 0;
   top: 0;
-  background-color: var(--accent-color);
   padding: 0.5rem;
   height: 100vh;
   width: 100%;
@@ -42,7 +48,7 @@ nav.visible {
 
 div.closeBox {
   font-size: 3rem;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   right: 1.3rem;
   display: block;
@@ -58,9 +64,56 @@ a {
   display: block;
   text-align: center;
   text-decoration: none;
-  color: var(--text-color);
 }
 
-a:hover {
+/* a:hover {
   background-color: var(--secondary-color);
+} */
+
+main {
+  padding: 3rem 2rem;
+}
+
+.sectionCard {
+  border: 1px solid #aaa;
+  border-radius: 0.8rem;
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionCard ul li {
+  font-size: 1rem;
+}
+
+.sectionCard img {
+  width: 350px;
+  padding-bottom: 2rem;
+}
+
+#courseMenu {
+  width: 100%;
+}
+
+.courseMenuContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+.courseMenuContainer li {
+  border: 1px solid #aaa;
+}
+
+#courseContainer p {
+  border: 1px solid #aaa;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 1.5rem 2rem;
 }

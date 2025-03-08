@@ -25,7 +25,6 @@
 
   a:hover {
     text-decoration: underline;
-    background-color: var(--accent-color);
   }
 
   .navContainer li {
@@ -38,5 +37,18 @@
 
   .closeBox.visible::before {
     display: none;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #courseWork {
+    grid-column: 1/3;
+  }
+
+  #waco {
+    grid-column: 3/4;
   }
 }

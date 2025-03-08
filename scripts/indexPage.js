@@ -98,10 +98,20 @@ function createCourseCard(course) {
   card.appendChild(courseName);
 }
 
+const courseContainer = document.querySelector("#courseContainer");
+const creditCount = document.querySelector("#creditNum");
+
 function showCourses(filterfunc) {
-  const courseContainer = document.querySelector("#courseContainer");
   courseContainer.innerText = "";
-  courses.filter(filterfunc).forEach((course) => createCourseCard(course));
+  const filteredCourses = courses.filter(filterfunc);
+
+  filteredCourses.forEach((course) => createCourseCard(course));
+
+  const totalCredits = filteredCourses.reduce(
+    (total, item) => total + item.credits,
+    0
+  );
+  creditCount.innerText = `Blarg ${totalCredits}`;
 }
 
 function showAll(course) {
