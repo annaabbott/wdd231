@@ -96,6 +96,9 @@ function createCourseCard(course) {
   const courseName = document.createElement("p");
   courseName.innerText = `${course.subject} ${course.number}`;
   card.appendChild(courseName);
+  if (course.completed === true) {
+    card.style.backgroundColor = "#859769";
+  }
 }
 
 const courseContainer = document.querySelector("#courseContainer");
@@ -111,7 +114,7 @@ function showCourses(filterfunc) {
     (total, item) => total + item.credits,
     0
   );
-  creditCount.innerText = `Blarg ${totalCredits}`;
+  creditCount.innerText = `Total number of credits in classes listed below: ${totalCredits}`;
 }
 
 function showAll(course) {

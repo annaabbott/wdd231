@@ -107,10 +107,19 @@ main {
   border: 1px solid #aaa;
 }
 
-#courseContainer p {
-  border: 1px solid #aaa;
-  padding: 1rem;
+#courseContainer{
+  padding-bottom: 2rem;
+}
+
+#courseContainer div {
+  background-color: var(--neutral);
+}
+
+
+#courseContainer div p {
+  padding: 1rem 10rem;
   text-align: center;
+/* align-items: center; */
 }
 
 footer {
