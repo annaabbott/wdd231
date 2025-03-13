@@ -19,6 +19,8 @@ const displayProphets = (prophets) => {
     portrait.setAttribute("width", "340");
     portrait.setAttribute("height", "440");
     card.appendChild(portrait);
+    let birthdate = document.createElement("p");
+    birthdate.textContent = `Date of Birth: ${prophet.birthdate}`;
   });
 };
 
