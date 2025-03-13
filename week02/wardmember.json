@@ -1,0 +1,16 @@
+[
+  {
+    "familyName": "Abbott",
+    "moveInDate": "November 25, 2022",
+    "numRecords": 6,
+    "hasBishopVisited": true,
+    "familyMembers": ["Tom", "Anna", "Richard", "Jeffrey", "Stephen", "Audrey"]
+  },
+  {
+    "familyName": "Best",
+    "moveInDate": "May 15, 2023",
+    "numRecords": 1,
+    "hasBishopVisited": false,
+    "familyMembers": ["Charity"]
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "companyName",
+    "address": "companyAddress",
+    "phone": "companyPhone",
+    "website": "companyurl",
+    "image": "imagefilename",
+    "membershipLevel": 1,
+    "other": null
+  },
+  {
+    "name": "companyName",
+    "address": "companyAddress",
+    "phone": "companyPhone",
+    "website": "companyurl",
+    "image": "imagefilename",
+    "membershipLevel": 1,
+    "other": null
+  },
+  {
+    "name": "companyName",
+    "address": "companyAddress",
+    "phone": "companyPhone",
+    "website": "companyurl",
+    "image": "imagefilename",
+    "membershipLevel": 1,
+    "other": null
+  },
+  {
+    "name": "companyName",
+    "address": "companyAddress",
+    "phone": "companyPhone",
+    "website": "companyurl",
+    "image": "imagefilename",
+    "membershipLevel": 1,
+    "other": null
+  },
+  {
+    "name": "companyName",
+    "address": "companyAddress",
+    "phone": "companyPhone",
+    "website": "companyurl",
+    "image": "imagefilename",
+    "membershipLevel": 1,
+    "other": null
+  },
+  {
+    "name": "companyName",
+    "address": "companyAddress",
+    "phone": "companyPhone",
+    "website": "companyurl",
+    "image": "imagefilename",
+    "membershipLevel": 1,
+    "other": null
+  },
+  {
+    "name": "companyName",
+    "address": "companyAddress",
+    "phone": "companyPhone",
+    "website": "companyurl",
+    "image": "imagefilename",
+    "membershipLevel": 1,
+    "other": null
+  }
+]
