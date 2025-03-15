@@ -78,6 +78,11 @@ ul.navMenu.open {
 
 main h1 {
   margin: 0;
+  padding: 2rem 1rem;
+}
+
+main button {
+  margin: 0 0 1rem 1rem;
 }
 
 #cards.grid {
