@@ -12,11 +12,19 @@ const displayMembers = (members) => {
     companyImg.setAttribute("src", `images/${member.image}`);
     companyImg.setAttribute("alt", `${member.name}`);
     companyImg.setAttribute("loading", "lazy");
-    companyImg.setAttribute("width", "340");
-    companyImg.setAttribute("height", "440");
+    companyImg.setAttribute("width", "300");
+    companyImg.setAttribute("height", "300");
     card.appendChild(companyImg);
-    // let birthdate = document.createElement("p");
-    // birthdate.textContent = `Date of Birth: ${prophet.birthdate}`;
+    let address = document.createElement("p");
+    address.textContent = `${member.address}`;
+    card.appendChild(address);
+    let phone = document.createElement("p");
+    phone.textContent = `${member.phone}`;
+    card.appendChild(phone);
+    let website = document.createElement("a");
+    website.textContent = `${member.website}`;
+    card.appendChild(website);
+    website.setAttribute("href", `${member.website}`);
   });
 };
 
@@ -27,8 +35,7 @@ async function getMemberData() {
       throw new Error(`Response status: ${response.status}`);
     }
     const data = await response.json();
-    console.table(data.members);
-    displayMembers(data.members);
+    displayMembers(data);
   } catch (error) {
     console.error(error.message);
   }

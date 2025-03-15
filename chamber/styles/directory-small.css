@@ -76,6 +76,22 @@ ul.navMenu.open {
   height: auto;
 }
 
+main h1 {
+  margin: 0;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main section {
+  margin: 2rem 1rem;
+  padding: 2rem;
+  border: 1px #c1c1c1 solid; 
+  border-radius: .4rem;
+}
+
 footer {
   padding: 0 2%;
 }

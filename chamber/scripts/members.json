@@ -49,16 +49,16 @@
     "address": "1701 North 4th Street Waco, TX 76707",
     "phone": "(254) 750-8400",
     "website": "www.cameronparkzoo.com",
-    "image": "imagefilename",
+    "image": "zoo.jpg",
     "membershipLevel": 1,
     "other": null
   },
   {
-    "name": "companyName",
-    "address": "companyAddress",
-    "phone": "companyPhone",
-    "website": "companyurl",
-    "image": "imagefilename",
+    "name": "Shipley Do-Nuts",
+    "address": "8810 Woodway Dr #505 Waco, TX 76712",
+    "phone": "(254) 741-1740",
+    "website": "shipleydonuts.com",
+    "image": "donuts.jpg",
     "membershipLevel": 1,
     "other": null
   }
