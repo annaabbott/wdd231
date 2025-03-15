@@ -1,0 +1,29 @@
+@media screen and (min-width: 640px) {
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  header span {
+    padding: 0 2rem;
+  }
+
+  #hamburgerBtn {
+    display: none;
+  }
+
+  ul.navMenu,
+  ul.navmenu.open {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  ul.navMenu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
