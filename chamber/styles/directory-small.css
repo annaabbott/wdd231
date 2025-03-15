@@ -8,10 +8,16 @@
 }
 
 header {
-  display: grid;
-  grid-template-columns: 60px auto 60px;
-  align-items: end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   padding: 0 1rem;
+}
+
+header span.title {
+  text-align: center;
+  padding: 0.25rem 1rem;
 }
 
 nav {
@@ -25,20 +31,19 @@ nav {
   color: #202020;
   cursor: pointer;
   text-align: center;
-  padding: 0.25rem;
+  /* padding: 0.25rem; */
+  padding: 0;
 }
 
-ul{
+ul {
   width: 100%;
   margin: 0 auto;
 }
 
 ul.navMenu li a {
   display: block;
-  padding: 1rem 2%;
   color: #202020;
   text-decoration: none;
-  padding: 1rem 0;
   width: 100%;
 }
 
@@ -62,6 +67,11 @@ ul.navMenu.open {
 
 #hamburgerBtn.open::before {
   content: "X";
+}
+
+.hero {
+  width: 100vw;
+  height: auto;
 }
 
 footer {
