@@ -38,6 +38,7 @@ nav {
 ul {
   width: 100%;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 ul.navMenu li a {
@@ -45,6 +46,7 @@ ul.navMenu li a {
   color: #202020;
   text-decoration: none;
   width: 100%;
+  padding: 1rem 0;
 }
 
 li.active a {
