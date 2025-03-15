@@ -49,8 +49,12 @@ ul.navMenu li a {
   padding: 1rem 0;
 }
 
-li.active a {
+li.active {
   background-color: rgba(0, 0, 0, 0.2);
+  padding: 0 4rem;
+}
+
+li.active a {
   margin: 0 auto;
 }
 
@@ -90,9 +94,9 @@ main button {
   flex-wrap: wrap;
 }
 
-#cards.list section{
+#cards.list section {
   border: none;
-padding: 0;
+  padding: 0;
 }
 
 main section {
@@ -104,4 +108,6 @@ main section {
 
 footer {
   padding: 0 2%;
+  background-color: var(--primary-color);
+  color: #fff;
 }
