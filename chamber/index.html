@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chamber of Commerce Home</title>
     <meta
       name="description"
-      content="Homepage for the fictional Heart of Texas Chamber of Commerce. Demonstrates proficiency in HTML, CSS, and JavaScript.">
-    <meta name="author" content="Anna Abbott">
+      content="Homepage for the fictional Heart of Texas Chamber of Commerce. Demonstrates proficiency in HTML, CSS, and JavaScript."
+    />
+    <meta name="author" content="Anna Abbott" />
 
-    <meta property="og:title" content="Heart of Texas Chamber of Commerce Directory">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://annaabbott.github.io/wdd231/chamber/images/tx-flag.png">
+    <meta
+      property="og:title"
+      content="Heart of Texas Chamber of Commerce Directory"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://annaabbott.github.io/wdd231/chamber/images/tx-flag.png"
+    />
     <meta
       property="og:url"
-      content="https://annaabbott.github.io/wdd231/chamber/index.html">
+      content="https://annaabbott.github.io/wdd231/chamber/index.html"
+    />
 
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:description"
-      content="Homepage for the ficticious Heart of Texas Chamber of Commerce, created as part of the WDD 231 class at BYU-Idaho. Demonstrates proficiency in HTML, CSS, and JavaScript.">
-    <meta name="twitter:image" content="images/waco-cropped-resized.jpg">
-    <meta name="twitter:title" content="Anna Abbott Home">
+      content="Homepage for the ficticious Heart of Texas Chamber of Commerce, created as part of the WDD 231 class at BYU-Idaho. Demonstrates proficiency in HTML, CSS, and JavaScript."
+    />
+    <meta name="twitter:image" content="images/waco-cropped-resized.jpg" />
+    <meta name="twitter:title" content="Anna Abbott Home" />
 
-    <link href="styles/normalize.css" rel="stylesheet">
-    <link href="styles/directory-small.css" rel="stylesheet">
-    <link href="styles/directory-large.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet" />
+    <link href="styles/directory-small.css" rel="stylesheet" />
+    <link href="styles/directory-large.css" rel="stylesheet" />
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/responsive-navigation.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/local-weather.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet">
+      rel="stylesheet"
+    />
 
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico" />
   </head>
   <body>
     <header>
@@ -45,7 +55,8 @@
         src="images/tx-flag.png"
         alt="Texas State Flag"
         width="60"
-        height="40">
+        height="40"
+      />
       <span class="title">Heart of Texas Chamber of Commerce</span>
       <button id="hamburgerBtn"></button>
     </header>
@@ -59,11 +70,18 @@
       </ul>
     </nav>
     <main>
-      <img class="hero" src="images/waco-downtown-hero.jpg" alt="Waco, Texas at night">
+      <img
+        class="hero"
+        src="images/waco-downtown-hero.jpg"
+        alt="Waco, Texas at night"
+      />
       <h1>Home</h1>
       <button id="join">Join the Chamber of Commerce</button>
       <section>Current Events</section>
-      <section>Current Weather</section>
+      <section>
+        <h2>Current Weather</h2>
+        <p id="current-temp"></p>
+      </section>
       <section>Company Spotlights</section>
     </main>
     <footer>
