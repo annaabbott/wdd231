@@ -1,0 +1,129 @@
+:root {
+  font-size: 16px;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  --primary-color: #0000ad;
+  --secondary-color: #d30036;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+header span.title {
+  text-align: center;
+  padding: 0.25rem 1rem;
+}
+
+nav {
+  color: #fff;
+}
+
+#hamburgerBtn {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #202020;
+  cursor: pointer;
+  text-align: center;
+  /* padding: 0.25rem; */
+  padding: 0;
+}
+
+ul {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+ul.navMenu li a {
+  display: block;
+  color: #202020;
+  text-decoration: none;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+li.active {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0 4rem;
+}
+
+li.active a {
+  margin: 0 auto;
+}
+
+ul.navMenu {
+  display: none;
+  list-style-type: none;
+}
+
+ul.navMenu.open {
+  display: block;
+}
+
+#hamburgerBtn::before {
+  content: "\2630";
+}
+
+#hamburgerBtn.open::before {
+  content: "X";
+}
+
+.hero-container {
+  position: relative;
+  width: 75%;
+}
+
+.hero {
+  width: 100vw;
+  height: auto;
+}
+
+#join {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin: 0;
+  cursor: pointer;
+  border: none;
+  padding: .25rem .5rem;
+  border-radius: 0.4rem;
+}
+
+main h1 {
+  margin: 0;
+  padding: 2rem 1rem;
+}
+
+main button {
+  margin: 0 0 1rem 1rem;
+}
+
+#cards.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#cards.list section {
+  border: none;
+  padding: 0;
+}
+
+main section {
+  margin: 2rem 1rem;
+  padding: 2rem;
+  border: 1px #c1c1c1 solid;
+  border-radius: 0.4rem;
+}
+
+footer {
+  padding: 0 2%;
+  background-color: var(--primary-color);
+  color: #fff;
+}
