@@ -1,24 +1,19 @@
 const path = "scripts/members.json";
 
 async function getMemberData() {
-  try {
     const response = await fetch(path);
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
     }
     const data = await response.json();
     console.log(data);
-    renderSpotlights(data);
-  } catch (error) {
-    console.error(error.message);
-  }
+    return data.filter(member => member.membershipLevel >= 2);
 }
 
-getMemberData();
 
-function renderSpotlights(members) {
-  members.forEach((member) => {
-    const spotlightCards = document.getElementById("#spotlight");
+function renderSpotlights(filteredData) {
+  filteredData.forEach((member) => {
+    const spotlightCards = document.getElementById("spotlight");
     let companyCard = document.createElement("div");
     spotlightCards.appendChild(companyCard);
     let companyName = document.createElement("h3");
@@ -46,3 +41,6 @@ function renderSpotlights(members) {
     companyCard.appendChild(membershipLevel);
   });
 }
+
+ getMemberData().then(filteredData => renderSpotlights(filteredData)).catch(error => console.error(error));
+

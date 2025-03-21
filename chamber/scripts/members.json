@@ -5,7 +5,7 @@
     "phone": "(254)235-0603",
     "website": "https://shop.magnoliamarket.com/",
     "image": "magnolia.jpg",
-    "membershipLevel": 1,
+    "membershipLevel": 3,
     "other": null
   },
   {
@@ -14,7 +14,7 @@
     "phone": "855-5-RANCHER",
     "website": "rancherhatbar.com",
     "image": "hat-ranch.jpg",
-    "membershipLevel": 1,
+    "membershipLevel": 2,
     "other": null
   },
   {
@@ -32,7 +32,7 @@
     "phone": "(254) 757-1025",
     "website": "drpeppermuseum.com",
     "image": "drpepper.jpg",
-    "membershipLevel": 1,
+    "membershipLevel": 3,
     "other": null
   },
   {
@@ -41,7 +41,7 @@
     "phone": "(254) 300-6697",
     "website": "wacoaxeco.com",
     "image": "wacoaxecompany.jpg",
-    "membershipLevel": 1,
+    "membershipLevel": 2,
     "other": null
   },
   {
@@ -50,7 +50,7 @@
     "phone": "(254) 750-8400",
     "website": "www.cameronparkzoo.com",
     "image": "zoo.jpg",
-    "membershipLevel": 1,
+    "membershipLevel": 2,
     "other": null
   },
   {
@@ -59,7 +59,7 @@
     "phone": "(254) 741-1740",
     "website": "shipleydonuts.com",
     "image": "donuts.jpg",
-    "membershipLevel": 1,
+    "membershipLevel": 2,
     "other": null
   }
 ]
