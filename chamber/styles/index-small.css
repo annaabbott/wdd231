@@ -134,6 +134,34 @@ main section {
   border-radius: 0.4rem;
 }
 
+form {
+  padding: 1rem;
+  border: 1px #c1c1c1 solid;
+  margin: 1rem;
+  border-radius: 0.4rem;
+}
+
+label {
+  display: block;
+  padding: .5rem 0;
+  font-size: .8rem;;
+}
+
+input, textarea {
+  width: 500px;
+  border: 1px #c1c1c1 solid;
+
+}
+
+textarea{
+  height: 5rem;
+}
+
+form button {
+  display: block;
+  margin: .5rem 0;
+}
+
 footer {
   padding: 0 2%;
   background-color: var(--primary-color);
