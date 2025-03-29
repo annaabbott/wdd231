@@ -37,7 +37,7 @@
     <link href="styles/directory-large.css" rel="stylesheet" />
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/responsive-navigation.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -73,35 +73,133 @@
 
     <main>
       <h1>Join the Heart of Texas Chamber of Commerce</h1>
+      <p>
+        Required fields are followed by <span aria-label="required">*</span>.
+      </p>
       <form action="thankyou.html" method="get">
-        <label for="firstName">First Name:</label>
-        <input type="text" required id="firstName" name="firstName" />
+        <fieldset>
+          <legend>Applicant Information</legend>
+          <label for="firstName"
+            >First Name:<span aria-label="required">*</span></label
+          >
+          <input
+            type="text"
+            required
+            id="firstName"
+            name="firstName"
+            autocomplete="first name"
+          />
 
-        <label for="lastName">Last Name:</label>
-        <input type="text" required id="lastName" name="lastName" />
+          <label for="lastName"
+            >Last Name:<span aria-label="required">*</span></label
+          >
+          <input
+            type="text"
+            required
+            id="lastName"
+            name="lastName"
+            autocomplete="last name"
+          />
 
-        <label for="title">Organizational Title:</label>
-        <input type="text" id="title" name="title" />
+          <label for="title">Organizational Title:</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            pattern="[-\sa-zA-Z]+"
+            minlength="7"
+            autocomplete="organization-title"
+          />
 
-        <label for="email">Email Address:</label>
-        <input type="email" required id="email" name="email" />
+          <label for="email"
+            >Email Address:<span aria-label="required">*</span></label
+          >
+          <input
+            type="email"
+            required
+            id="email"
+            name="email"
+            placeholder="my_email@email.com"
+          />
 
-        <label for="phone">Mobile Phone Number:</label>
-        <input type="telephone" required id="phone" name="phone" />
+          <label for="phone"
+            >Mobile Phone Number:<span aria-label="required">*</span></label
+          >
+          <input
+            type="tel"
+            required
+            id="phone"
+            name="phone"
+            autocomplete="phone"
+          />
+        </fieldset>
 
-        <label for="businessName">Business Name:</label>
-        <input type="text" required id="businessName" name="businessName" />
+        <fieldset>
+          <legend>Business Information</legend>
 
-        <!-- <label for="level">Membership Level</label>
-            <input type="radio"> -->
+          <label for="businessName"
+            >Business Name:<span aria-label="required">*</span></label
+          >
+          <input
+            type="text"
+            required
+            id="businessName"
+            name="businessName"
+            autocomplete="organization"
+          />
 
-        <label for="description">Brief Business Description:</label>
-        <textarea id="description" name="businessDescription"></textarea>
+          <label for="description">Brief Business Description:</label>
+          <textarea id="description" name="businessDescription"></textarea>
+        </fieldset>
 
-        <!--timestamp-->
+        <fieldset>
+          <legend>Membership Level</legend>
+          <input type="radio" name="level" id="nonProfit" value="non-profit" />
+          <label for="level">Non-Profit</label>
+          <input type="radio" name="level" id="bronze" value="bronze" />
+          <label for="bronze">Bronze</label>
+          <input type="radio" name="level" id="silver" value="silver" />
+          <label for="silver">Silver</label>
+          <input type="radio" name="level" id="gold" value="gold" />
+          <label for="gold">Gold</label>
+        </fieldset>
+
+        <input type="hidden" id="timestamp" name="timestamp" />
 
         <button type="submit">Send my Application</button>
       </form>
+
+      <section id="levelContainer">
+        <div class="level">
+          <h2>NP Level</h2>
+          <p>For our Not-for-Profit members</p>
+          <button id="npButton" class="modalBtn">Learn More</button>
+        </div>
+
+        <div class="level">
+          <h2>Bronze Level</h2>
+          <p>For our Bronze level members</p>
+          <button id="bronzeBtn" class="modalBtn">Learn More</button>
+        </div>
+
+        <div class="level">
+          <h2>Silver Level</h2>
+          <p>For our Silver level members</p>
+          <button id="silverBtn" class="modalBtn">Learn More</button>
+        </div>
+        
+        <div class="level">
+          <h2>Gold Level</h2>
+          <p>For our Gold level members</p>
+          <button id="goldBtn" class="modalBtn">Learn More</button>
+        </div>
+
+        <dialog id="modal">
+            <div></div>
+            <button id="closeModal">Close</button>
+          </dialog>
+
+      </section>
     </main>
 
     <footer>

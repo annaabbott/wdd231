@@ -9,9 +9,8 @@
   /* max-width: 100vw; */
 }
 
-body{
-    max-width: 1040px;
-
+body {
+  max-width: 1040px;
 }
 
 header {
@@ -38,7 +37,6 @@ nav {
   color: #202020;
   cursor: pointer;
   text-align: center;
-  /* padding: 0.25rem; */
   padding: 0;
 }
 
@@ -83,7 +81,7 @@ ul.navMenu.open {
 }
 
 main {
-    width: 100%;
+  width: 100%;
 }
 
 .hero-container {
@@ -141,25 +139,68 @@ form {
   border-radius: 0.4rem;
 }
 
+fieldset {
+  margin-bottom: 1rem;
+  border-radius: 0.4rem;
+}
+
+legend {
+  padding: 0 0.5rem;
+}
+
 label {
   display: block;
-  padding: .5rem 0;
-  font-size: .8rem;;
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
 }
 
-input, textarea {
-  width: 500px;
+input,
+textarea {
+  width: 300px;
   border: 1px #c1c1c1 solid;
-
 }
 
-textarea{
+input[type="radio"] {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  display: block;
+}
+
+textarea {
   height: 5rem;
 }
 
 form button {
   display: block;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
+}
+
+::backdrop {
+  background-color: #c1c1c1;
+}
+
+.modalBtn {
+  font-size: 1rem;
+  background: none;
+  border:  1px #c1c1c1 solid;
+  color: #202020;
+  cursor: pointer;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+#modal {
+  border:  1px #c1c1c1 solid;
+}
+
+#npCloseBtn {
+  margin: 1rem 0;
+  padding: 1rem;
+  border:  1px #c1c1c1 solid;
+  border-radius: 0.4rem;
 }
 
 footer {
