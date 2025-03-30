@@ -156,7 +156,7 @@ label {
 
 input,
 textarea {
-  width: 300px;
+  width: 96%;
   border: 1px #c1c1c1 solid;
 }
 
@@ -177,6 +177,32 @@ form button {
   margin: 0.5rem 0;
 }
 
+.levelContainer {
+  position: relative;
+  height: 800px;
+  animation: changeColor 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+/* .fadePanel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+ */
+@keyframes changeColor {
+  from {
+    color: white;
+  }
+  to {
+    color: black;
+  }
+}
+
 ::backdrop {
   background-color: #c1c1c1;
 }
@@ -184,7 +210,7 @@ form button {
 .modalBtn {
   font-size: 1rem;
   background: none;
-  border:  1px #c1c1c1 solid;
+  border: 1px #c1c1c1 solid;
   color: #202020;
   cursor: pointer;
   text-align: center;
@@ -193,13 +219,13 @@ form button {
 }
 
 #modal {
-  border:  1px #c1c1c1 solid;
+  border: 1px #c1c1c1 solid;
 }
 
 #npCloseBtn {
   margin: 1rem 0;
   padding: 1rem;
-  border:  1px #c1c1c1 solid;
+  border: 1px #c1c1c1 solid;
   border-radius: 0.4rem;
 }
 
