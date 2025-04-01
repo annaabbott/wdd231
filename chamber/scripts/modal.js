@@ -24,7 +24,7 @@ npBtn.addEventListener("click", () => {
   dialogBoxText.textContent = "";
   modal.showModal();
   let modalh2 = document.createElement("h2");
-  modalh2.textContent = `NP Level`;
+  modalh2.textContent = `NP Level: $500 annually`;
   dialogBoxText.appendChild(modalh2);
   let modalP = document.createElement("p");
   modalP.textContent = `This level of membership is for our Non-Profit organizations. It includes:`;
@@ -46,7 +46,7 @@ bronzeBtn.addEventListener("click", () => {
   dialogBoxText.textContent = "";
   modal.showModal();
   let modalh2 = document.createElement("h2");
-  modalh2.textContent = `Bronze Level`;
+  modalh2.textContent = `Bronze Level: $700 annually`;
   dialogBoxText.appendChild(modalh2);
   let modalP = document.createElement("p");
   modalP.textContent = `Our Bronze Level membership includes:`;
@@ -68,7 +68,7 @@ silverBtn.addEventListener("click", () => {
   dialogBoxText.textContent = "";
   modal.showModal();
   let modalh2 = document.createElement("h2");
-  modalh2.textContent = `Bronze Level`;
+  modalh2.textContent = `Silver Level: $1000 annually`;
   dialogBoxText.appendChild(modalh2);
   let modalP = document.createElement("p");
   modalP.textContent = `Our Silver Level membership includes all the benefits of the Bronze Level plus:`;
@@ -90,7 +90,7 @@ goldBtn.addEventListener("click", () => {
   dialogBoxText.textContent = "";
   modal.showModal();
   let modalh2 = document.createElement("h2");
-  modalh2.textContent = `Bronze Level`;
+  modalh2.textContent = `Gold Level: $1500 annually`;
   dialogBoxText.appendChild(modalh2);
   let modalP = document.createElement("p");
   modalP.textContent = `Our Gold Level membership includes all the benefits of the Silver Level plus:`;
