@@ -6,6 +6,9 @@ const modal = document.querySelector("#modal");
 const closeModal = document.querySelector("#closeModal");
 const dialogBoxText = document.querySelector("#modal div");
 
+const timestamp = document.querySelector("#timestamp");
+timestamp.value = (new Date()).toISOString();
+
 // <!-- <h2>NP Level</h2>
 // <p>
 //   This level of Memebership is for our Non-Profit organizations. It

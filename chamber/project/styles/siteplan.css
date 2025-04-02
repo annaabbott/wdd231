@@ -1,0 +1,21 @@
+:root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --primary-color: #E4C219;
+    --secondary-color: #C72F01;
+    font-family: "Roboto", sans-serif;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+}
+
+#red {
+    background-color: var(--secondary-color);
+}
+
+#yellow {
+    background-color: var(--primary-color);
+}
