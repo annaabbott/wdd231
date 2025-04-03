@@ -1,21 +1,34 @@
 :root {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    --primary-color: #E4C219;
-    --secondary-color: #C72F01;
-    font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --primary-color: #e4c219;
+  --secondary-color: #c72f01;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+justify-content: space-between;
+width: 20vw;
 }
 
 div {
-    height: 100px;
-    width: 100px;
+  height: 100px;
+  width: 100px;
 }
 
 #red {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 #yellow {
+  background-color: var(--primary-color);
+}
+
+
+footer {
     background-color: var(--primary-color);
+    margin: 0;
+    padding: 3rem 0;
 }
