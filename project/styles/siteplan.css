@@ -7,6 +7,18 @@
   font-family: "Roboto", sans-serif;
 }
 
+body{
+  margin: 0;
+}
+
+header {
+  padding: 0 2%;
+}
+
+main {
+  padding: 0 2%;
+}
+
 .container {
   display: flex;
 justify-content: space-between;
@@ -30,5 +42,5 @@ div {
 footer {
     background-color: var(--primary-color);
     margin: 0;
-    padding: 3rem 0;
+    padding: 3rem 2%;
 }
