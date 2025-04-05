@@ -16,6 +16,7 @@ function displayLocations(things_to_do) {
     locationImg.setAttribute("loading", "lazy");
     locationImg.setAttribute("width", "300");
     locationImg.setAttribute("height", "200");
+    locationImg.classList.add("fadein")
     locationCard.appendChild(locationImg);
     let locationAddress = document.createElement("address");
     locationAddress.textContent = `${location.address}`;

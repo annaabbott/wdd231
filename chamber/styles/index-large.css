@@ -84,6 +84,16 @@
     margin-right: 1rem;
   }
 
+.fadein {
+  opacity: 0.5;
+  transition: 1s ease;
+}
+
+.fadein:hover {
+  opacity: 1;
+  transition: 1s ease;
+}
+
   #locationCards div button {
     max-width: 300px;
     margin-left: 1rem;
