@@ -31,3 +31,11 @@ function displayLocations(things_to_do) {
 }
 
 displayLocations(things_to_do);
+
+const visitCount = document.querySelector(".myVisitCount");
+let numVisits = Number(window.localStorage.getItem("myVisitCount")) || 0;
+console.log(numVisits);
+if (numVisits >= 1) {
+  visitCount.textContent = `Glad to see you again!`;
+}
+

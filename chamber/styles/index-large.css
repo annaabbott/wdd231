@@ -1,91 +1,96 @@
 @media screen and (min-width: 1025px) {
-    header {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-  
-    header span {
-      padding: 0 2rem;
-    }
-  
-    #hamburgerBtn {
-      display: none;
-    }
-  
-    ul.navMenu,
-    ul.navmenu.open {
-      display: flex;
-      justify-content: space-evenly;
-    }
-  
-    ul.navMenu a:hover {
-      background-color: rgba(255, 255, 255, 0.2);
-    }
-
-    .hero-container {
-        width: 90%;
-      }
-
-    #join {
-        top: 75%;
-        left: 75%;
-        margin: 0;
-        cursor: pointer;
-        padding: 1rem;
-        border-radius: 0.4rem;
-      }
-      
-    #cards.list section {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      column-gap: 15px;
-      align-items: center;
-      justify-items: start;
-      padding-left: 1rem;
-      height: 5rem;
-    }
-    #cards.list section:nth-child(odd){
-      background-color: #c1c1c1;
-    }
-    h2 {
-      font-size: 16px;
-    }
-  
-    .grid-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    
-    .currentEvents{
-        grid-column: 1/3;
-    }
-    
-    .currentWeather{
-        grid-column: 3/4;
-    }
-    
-    .forecast{
-        grid-column: 4/5;
-    }
-    
-    .companySpotlights{
-        grid-column: 1/5;
-    }
-    
-    #locationCards div{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    
-    #locationCards div button {
-      max-width: 300px;
-      margin-left: 1rem;
-    }
-
-    footer {
-      display: flex;
-      justify-content: space-around;
-    }
+  header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
-  
+
+  header span {
+    padding: 0 2rem;
+  }
+
+  #hamburgerBtn {
+    display: none;
+  }
+
+  ul.navMenu,
+  ul.navmenu.open {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  ul.navMenu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .hero-container {
+    width: 90%;
+  }
+
+  #join {
+    top: 75%;
+    left: 75%;
+    margin: 0;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+
+  #cards.list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    align-items: center;
+    justify-items: start;
+    padding-left: 1rem;
+    height: 5rem;
+  }
+  #cards.list section:nth-child(odd) {
+    background-color: #c1c1c1;
+  }
+  h2 {
+    font-size: 16px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .currentEvents {
+    grid-column: 1/3;
+  }
+
+  .currentWeather {
+    grid-column: 3/4;
+  }
+
+  .forecast {
+    grid-column: 4/5;
+  }
+
+  .companySpotlights {
+    grid-column: 1/5;
+  }
+
+  #locationCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #locationCards div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 1rem;
+  }
+
+  #locationCards div button {
+    max-width: 300px;
+    margin-left: 1rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
