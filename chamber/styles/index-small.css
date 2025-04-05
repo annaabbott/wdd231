@@ -275,7 +275,15 @@ form button {
 
 #locationCards div p {
   grid-area: description;
-  
+  padding: 0 2%;
+}
+
+#locationCards div button {
+  margin: 1rem 2%;
+  padding: 1rem;
+  border: 1px #c1c1c1 solid;
+  border-radius: 0.4rem;
+
 }
 
 footer {

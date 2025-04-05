@@ -1,4 +1,4 @@
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 1025px) {
     header {
       display: flex;
       justify-content: flex-start;
@@ -73,6 +73,15 @@
         grid-column: 1/5;
     }
     
+    #locationCards div{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    #locationCards div button {
+      max-width: 300px;
+      margin-left: 1rem;
+    }
 
     footer {
       display: flex;
