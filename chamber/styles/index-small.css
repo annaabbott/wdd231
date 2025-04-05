@@ -87,13 +87,13 @@ main {
 
 .hero-container {
   position: relative;
-  width: 100%;
+  width: 96vw;
 }
 
 .hero {
   height: auto;
   overflow: hidden;
-  /* width: 100%; */
+  width: 96vw;
 }
 
 #join {
@@ -236,6 +236,46 @@ form button {
   padding: 1rem;
   border: 1px #c1c1c1 solid;
   border-radius: 0.4rem;
+}
+
+#locationCards {
+  width: 94vw;
+}
+
+#locationCards div{
+  display: grid;
+  grid-template-areas: 
+  "name"
+  "image"
+  "description"
+  "address"
+  "button";
+  border: 1px #c1c1c1 solid;
+  border-radius: 0.4rem;
+/* width: 96vw; */
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#locationCards div h2 {
+  grid-area: name;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+#locationCards div img {
+  grid-area: image;
+  margin: 0 auto;
+}
+
+#address {
+  grid-area: address;
+  padding: 0 2%;
+}
+
+#locationCards div p {
+  grid-area: description;
+  
 }
 
 footer {

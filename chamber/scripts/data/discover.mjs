@@ -5,7 +5,7 @@ export const things_to_do = [
     cost: "Free to visit, shopping and food prices vary",
     description:
       "A popular shopping and dining destination created by Chip and Joanna Gaines, featuring boutique stores, food trucks, and a large green space.",
-    image_url: "https://example.com/magnolia_market.jpg",
+    image_url: "./images/discover-magnolia-resized.webp",
   },
   {
     name: "Dr Pepper Museum",
@@ -13,7 +13,7 @@ export const things_to_do = [
     cost: "$10 for adults, $6 for kids",
     description:
       "A museum dedicated to the history of Dr Pepper, showcasing exhibits, memorabilia, and a soda fountain.",
-    image_url: "https://example.com/dr_pepper_museum.jpg",
+    image_url: "./images/discover-drpepper-resized.webp",
   },
   {
     name: "Cameron Park Zoo",
@@ -21,7 +21,7 @@ export const things_to_do = [
     cost: "$12 for adults, $9 for kids",
     description:
       "A 52-acre natural habitat zoo featuring a wide variety of animals and interactive exhibits.",
-    image_url: "https://example.com/cameron_park_zoo.jpg",
+    image_url: "./images/discover-zoo-resized.webp",
   },
   {
     name: "Waco Mammoth National Monument",
@@ -29,7 +29,7 @@ export const things_to_do = [
     cost: "$5 for adults, $3 for kids",
     description:
       "An active paleontological dig site where visitors can see preserved mammoth fossils and learn about prehistoric Texas.",
-    image_url: "https://example.com/waco_mammoth.jpg",
+    image_url: "./images/discover-mammoth-resized.webp",
   },
   {
     name: "Texas Ranger Hall of Fame and Museum",
@@ -37,7 +37,7 @@ export const things_to_do = [
     cost: "$8 for adults, $4 for kids",
     description:
       "A museum dedicated to the history of the Texas Rangers, featuring artifacts, weapons, and interactive exhibits.",
-    image_url: "https://example.com/texas_ranger_museum.jpg",
+    image_url: "./images/discover-rangers-resized.webp",
   },
   {
     name: "Baylor University and Mayborn Museum",
@@ -45,7 +45,7 @@ export const things_to_do = [
     cost: "$10 for adults, $5 for kids",
     description:
       "A university-based museum with natural history exhibits, hands-on science activities, and historical Texas displays.",
-    image_url: "https://example.com/mayborn_museum.jpg",
+    image_url: "./images/discover-mayborn-resized.webp",
   },
   {
     name: "Cameron Park",
@@ -53,7 +53,7 @@ export const things_to_do = [
     cost: "Free",
     description:
       "A scenic park offering hiking trails, picnic areas, and beautiful views of the Brazos River.",
-    image_url: "https://example.com/cameron_park.jpg",
+    image_url: "./images/discover-cameronpark-resized.webp",
   },
   {
     name: "Homestead Heritage",
@@ -61,7 +61,7 @@ export const things_to_do = [
     cost: "Free to visit, workshops and shopping prices vary",
     description:
       "A traditional craft village featuring woodworking, pottery, and sustainable farming demonstrations.",
-    image_url: "https://example.com/homestead_heritage.jpg",
+    image_url: "./images/discover-homestead-resized.webp",
   },
   {
     name: "Lake Waco",
@@ -69,7 +69,7 @@ export const things_to_do = [
     cost: "Free, boat rental prices vary",
     description:
       "A large lake offering fishing, boating, and scenic picnic areas.",
-    image_url: "https://example.com/lake_waco.jpg",
+    image_url: "./images/discover-lakewaco-resized.webp",
   },
   {
     name: "Waco Suspension Bridge and Riverwalk",
@@ -77,6 +77,6 @@ export const things_to_do = [
     cost: "Free",
     description:
       "A historic bridge with beautiful views of the Brazos River, great for walking and photography.",
-    image_url: "https://example.com/suspension_bridge.jpg",
+    image_url: "./images/discover-bridge-resized.webp",
   },
 ];
