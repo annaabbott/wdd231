@@ -93,7 +93,7 @@ main {
 .hero {
   height: auto;
   overflow: hidden;
-  width: 96vw;
+  width: 640px;
 }
 
 #join {
