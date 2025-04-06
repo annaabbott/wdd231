@@ -182,11 +182,21 @@ form button {
 }
 
 .levelContainer {
-  position: relative;
-  height: 800px;
+  display: flex;
+  justify-content: space-around;
+  height: 400px;
+  flex-wrap: wrap;
   animation: changeColor 4s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
+  border: none;
+}
+
+.level {
+  border: 1px #c1c1c1 solid;
+  border-radius: 0.4rem;
+margin: 1rem;
+padding: 1rem;
 }
 
 #modal p {
