@@ -1,52 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join the Heart of Texas Chamber of Commerce</title>
     <meta
       name="description"
-      content="Join the Chamber of Commerce page for the fictional Heart of Texas Chamber of Commerce. Demonstrates proficiency in HTML, CSS, and JavaScript."
-    />
-    <meta name="author" content="Anna Abbott" />
+      content="Join the Chamber of Commerce page for the fictional Heart of Texas Chamber of Commerce. Demonstrates proficiency in HTML, CSS, and JavaScript.">
+    <meta name="author" content="Anna Abbott">
 
     <meta
       property="og:title"
-      content="Heart of Texas Chamber of Commerce Join the Chamber page"
-    />
-    <meta property="og:type" content="website" />
+      content="Heart of Texas Chamber of Commerce Join the Chamber page">
+    <meta property="og:type" content="website">
     <meta
       property="og:image"
-      content="https://annaabbott.github.io/wdd231/chamber/images/tx-flag.png"
-    />
+      content="https://annaabbott.github.io/wdd231/chamber/images/tx-flag.png">
     <meta
       property="og:url"
-      content="https://annaabbott.github.io/wdd231/chamber/directory.html"
-    />
+      content="https://annaabbott.github.io/wdd231/chamber/directory.html">
 
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary">
     <meta
       name="twitter:description"
-      content="Homepage for Anna Abbott's coursework in the WDD 231 class at BYU-Idaho. Demonstrates proficiency in HTML, CSS, and JavaScript."
-    />
-    <meta name="twitter:image" content="images/waco-cropped-resized.jpg" />
-    <meta name="twitter:title" content="Anna Abbott Home" />
+      content="Homepage for Anna Abbott's coursework in the WDD 231 class at BYU-Idaho. Demonstrates proficiency in HTML, CSS, and JavaScript.">
+    <meta name="twitter:image" content="images/waco-cropped-resized.jpg">
+    <meta name="twitter:title" content="Anna Abbott Home">
 
-    <link href="styles/normalize.css" rel="stylesheet" />
-    <link href="styles/index-small.css" rel="stylesheet" />
-    <link href="styles/directory-large.css" rel="stylesheet" />
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/index-small.css" rel="stylesheet">
+    <link href="styles/directory-large.css" rel="stylesheet">
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/responsive-navigation.js" defer></script>
     <script src="scripts/modal.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet">
 
-    <link rel="icon" href="images/favicon.ico" />
+    <link rel="icon" href="images/favicon.ico">
   </head>
 
   <body>
@@ -56,8 +50,7 @@
         src="images/tx-flag.png"
         alt="Texas State Flag"
         width="60"
-        height="40"
-      />
+        height="40">
       <span class="title">Heart of Texas Chamber of Commerce</span>
       <button id="hamburgerBtn"></button>
     </header>
@@ -87,8 +80,7 @@
             required
             id="firstName"
             name="firstName"
-            autocomplete="given-name"
-          />
+            autocomplete="given-name">
 
           <label for="lastName"
             >Last Name:<span aria-label="required">*</span></label
@@ -98,8 +90,7 @@
             required
             id="lastName"
             name="lastName"
-            autocomplete="family-name"
-          />
+            autocomplete="family-name">
 
           <label for="title">Organizational Title:</label>
           <input
@@ -108,8 +99,7 @@
             name="title"
             pattern="[-\sa-zA-Z]+"
             minlength="7"
-            autocomplete="organization-title"
-          />
+            autocomplete="organization-title">
 
           <label for="email"
             >Email Address:<span aria-label="required">*</span></label
@@ -119,8 +109,7 @@
             required
             id="email"
             name="email"
-            placeholder="my_email@email.com"
-          />
+            placeholder="my_email@email.com">
 
           <label for="phone"
             >Mobile Phone Number:<span aria-label="required">*</span></label
@@ -130,8 +119,7 @@
             required
             id="phone"
             name="phone"
-            autocomplete="tel"
-          />
+            autocomplete="tel">
         </fieldset>
 
         <fieldset>
@@ -145,8 +133,7 @@
             required
             id="businessName"
             name="businessName"
-            autocomplete="organization"
-          />
+            autocomplete="organization">
 
           <label for="description">Brief Business Description:</label>
           <textarea id="description" name="businessDescription"></textarea>
@@ -154,17 +141,17 @@
 
         <fieldset>
           <legend>Membership Level</legend>
-          <input type="radio" name="level" id="nonProfit" value="non-profit" />
+          <input type="radio" name="level" id="nonProfit" value="non-profit">
           <label for="nonProfit">Non-Profit</label>
-          <input type="radio" name="level" id="bronze" value="bronze" />
+          <input type="radio" name="level" id="bronze" value="bronze">
           <label for="bronze">Bronze</label>
-          <input type="radio" name="level" id="silver" value="silver" />
+          <input type="radio" name="level" id="silver" value="silver">
           <label for="silver">Silver</label>
-          <input type="radio" name="level" id="gold" value="gold" />
+          <input type="radio" name="level" id="gold" value="gold">
           <label for="gold">Gold</label>
         </fieldset>
 
-        <input type="hidden" id="timestamp" name="timestamp" />
+        <input type="hidden" id="timestamp" name="timestamp">
 
         <button type="submit">Send my Application</button>
       </form>
