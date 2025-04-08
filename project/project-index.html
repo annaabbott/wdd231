@@ -1,45 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Una Obra Maravillosa</title>
 
     <meta
       name="description"
-      content="Home Page for Una Obra Maravillosa, a group of missionaries and saints who live in or have lived in the Canary Islands">
-    <meta name="author" content="Anna Abbott">
+      content="Home Page for Una Obra Maravillosa, a group of missionaries and saints who live in or have lived in the Canary Islands"
+    />
+    <meta name="author" content="Anna Abbott" />
 
-    <meta
-      property="og:title"
-      content="Una Obra Maravillosa Home">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="Una Obra Maravillosa Home" />
+    <meta property="og:type" content="website" />
     <meta
       property="og:image"
-      content="https://annaabbott.github.io/wdd231/chamber/images/tx-flag.png">
+      content="https://annaabbott.github.io/wdd231/chamber/images/tx-flag.png"
+    />
     <meta
       property="og:url"
-      content="https://annaabbott.github.io/wdd231/chamber/index.html">
+      content="https://annaabbott.github.io/wdd231/chamber/index.html"
+    />
 
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:description"
-      content="Home Page for Una Obra Maravillosa, a group of missionaries and saints who live in or have lived in the Canary Islands. Created as part of the WDD 231 class at BYU-Idaho. Demonstrates proficiency in HTML, CSS, and JavaScript.">
-    <meta name="twitter:image" content="images/waco-cropped-resized.jpg">
-    <meta name="twitter:title" content="Anna Abbott Home">
+      content="Home Page for Una Obra Maravillosa, a group of missionaries and saints who live in or have lived in the Canary Islands. Created as part of the WDD 231 class at BYU-Idaho. Demonstrates proficiency in HTML, CSS, and JavaScript."
+    />
+    <meta name="twitter:image" content="images/waco-cropped-resized.jpg" />
+    <meta name="twitter:title" content="Anna Abbott Home" />
 
-    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet" />
+    <link href="styles/base.css" rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet">
+      rel="stylesheet"
+    />
 
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico" />
+
+    <script src="scripts/main.js" type="module"></script>
   </head>
 
-<body>
-    
-</body>
+  <body>
+    <header>
+      <span class="title">Una Obra Maravillosa</span>
+      <button id="hamburgerBtn"></button>
+    </header>
+
+    <nav>
+      <ul class="navMenu">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="directory.html">Join our Community!</a></li>
+        <li><a href="join.html">Upcoming Events</a></li>
+        <li><a class="active">Currrent Weather</a></li>
+        <li><a class="active">Local News</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="hero-container">
+          <img class="hero-img"
+            src="images/hero-index.webp"
+            alt="Tenerife"
+            width="640"
+            height="auto"
+          />
+          <div class="hero-text">
+            <h2>A Community of Saints and Missionaries</h2>
+            <button>Join our Community</button>
+          </div>
+        </div>
+      </section>
+      <h1>Welcome!</h1>
+    </main>
+    <footer>
+      <section>
+        <h3>Una Obra Maravillosa</h3>
+      </section>
+      <section>
+        <p>wdd231 class project</p>
+        <p>&copy; <span id="currentyear"> </span> Anna Abbott | USA</p>
+        <p id="lastModified"></p>
+      </section>
+    </footer>
+  </body>
 </html>
