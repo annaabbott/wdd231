@@ -53,8 +53,8 @@
 
     <nav>
       <ul class="navMenu">
-        <li class="active"><a href="project-index.html">Home</a></li>
-        <li><a href="project-form.html">Join our Community</a></li>
+        <li ><a href="project-index.html">Home</a></li>
+        <li class="active"><a href="project-form.html">Join our Community</a></li>
         <li><a href="project-events.html">Upcoming Events</a></li>
         <li><a href="#weather">Currrent Weather</a></li>
         <li><a class="active" href="#news">Local News</a></li>
@@ -72,27 +72,59 @@
           />
           <div class="hero-text">
             <h2>A Community of Saints and Missionaries</h2>
-            <button>Join our Community</button>
+            
           </div>
         </div>
       </section>
-      <h1>Welcome!</h1>
-      <p>This is a website where we celebrate the members and missionaries of the Church of Jesus Christ of Latter-Day Saints in the Spain Las Palmas mission.</p>
-      <section id="weather">
-      <h2>Current Weather</h2>
-      <div id="weatherContainer">
-        <div>
-            <h3>Las Palmas</h3>
-        </div>
-        <div>
-            <h3>Santa Cruz de Tenerife</h3>
-        </div>
-      </div>
+      <h1>Join our Community</h1>
     </section>
-    <section id="news">
-        <h2>Local News</h2>
-        <div id="newsContainer"></div>
-    </section>
+    <form action="thankyou.html" method="get">
+        <label for="firstName"
+        >First Name:<span aria-label="required">*</span></label
+      >
+      <input
+        type="text"
+        required
+        id="firstName"
+        name="firstName"
+        autocomplete="given-name">
+
+      <label for="lastName"
+        >Last Name:<span aria-label="required">*</span></label
+      >
+      <input
+        type="text"
+        required
+        id="lastName"
+        name="lastName"
+        autocomplete="family-name">
+
+        <label for="email"
+        >Email Address:<span aria-label="required">*</span></label
+      >
+      <input
+        type="email"
+        required
+        id="email"
+        name="email"
+        placeholder="my_email@email.com">
+<legend>I am:</legend>
+<div>
+    <input type="checkbox" id="currentResident" name="audience" value="currentResident">
+    <label for="currentResident">Currently living in the Canary Islands</label>
+</div>
+
+<div>
+    <input type="checkbox" id="mission" name="audience" value="mission">
+    <label for="mission">A returned missionary who served in the Canary Islands</label>
+</div>
+<div>
+    <input type="checkbox" id="formerResident" name="audience" value="formerResident">
+    <label for="formerResident">A former resident of the Canary Islands</label>
+</div>
+<button type="submit">Send my Application</button>
+
+    </form>
     </main>
     <footer>
       <section>
