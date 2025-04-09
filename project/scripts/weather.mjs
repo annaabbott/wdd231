@@ -26,7 +26,7 @@ function displayResults(data) {
   }
   
 
-export async function apiFetch() {
+export async function weatherFetch() {
     try {
       const response = await fetch(url);
       if (!response.ok) {

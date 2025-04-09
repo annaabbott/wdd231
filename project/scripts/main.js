@@ -1,6 +1,6 @@
 import {hamburgerBtn, navMenu} from "./navigation.mjs";
-import {apiFetch} from "./weather.mjs";
-
+import {weatherFetch} from "./weather.mjs";
+import {newsFetch} from "./news.mjs";
 
 
 hamburgerBtn.addEventListener("click", () => {
@@ -8,5 +8,5 @@ hamburgerBtn.addEventListener("click", () => {
     // hamburgerBtn.classList.toggle("open");
   });
   
-
-  apiFetch()
+  weatherFetch()
+  newsFetch()
