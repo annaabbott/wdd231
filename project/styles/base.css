@@ -77,9 +77,13 @@
   ul {
     width: 100%;
     margin: 0 auto;
-    padding: 0 1rem;
   }
   
+li {
+    padding: 0 1rem;
+
+}
+
   ul.navMenu li a {
     display: block;
     color: #202020;
@@ -90,7 +94,6 @@
   
   li.active {
     background-color: rgba(0, 0, 0, 0.1);
-    padding: 0 4rem;
   }
   
   li.active a {
@@ -104,6 +107,7 @@
   
   ul.navMenu.open {
     display: block;
+    padding-left: 0;
   }
   
   #hamburgerBtn::before {
