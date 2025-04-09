@@ -10,6 +10,8 @@ const newsContainer = document.querySelector("#newsContainer");
 function displayResults(data) {
   console.log(" news json ready");
   data.articles.forEach((article) => {
+    let articleDiv = document.createElement("div");
+    newsContainer.appendChild(articleDiv);
     let articleImg = document.createElement("img");
     articleImg.setAttribute("src", `${article.urlToImage}`);
     articleImg.setAttribute("alt", `${article.title}`);
@@ -17,13 +19,13 @@ function displayResults(data) {
     articleImg.setAttribute("loading", "lazy");
     articleImg.setAttribute("width", "300");
     articleImg.setAttribute("height", "200");
-    newsContainer.appendChild(articleImg);
+    articleDiv.appendChild(articleImg);
     let headline = document.createElement("h3");
     headline.textContent = `${article.title}`;
-    newsContainer.appendChild(headline);
+    articleDiv.appendChild(headline);
     let newsBtn = document.createElement("button");
     newsBtn.textContent = `More Information`;
-    newsContainer.appendChild(newsBtn);
+    articleDiv.appendChild(newsBtn);
     //    let descP = document.createElement("p");
     //    descP.textContent = `${data.weather[0].description}`;
     //    newsContainer.appendChild(descP);
