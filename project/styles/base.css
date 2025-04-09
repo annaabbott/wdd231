@@ -19,10 +19,22 @@
   header span.title {
     text-align: center;
     padding: 0.25rem 1rem;
+    font-size: 2rem;
   }
 
   .hero {
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.hero a {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: .5rem 1rem;
+    border-radius: .7rem;
+    margin-top: 1rem;
 }
 
   .hero-container{
@@ -45,7 +57,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* background-color: rgba(0,0,0,0.5); */
+    color: #fff;
   }
 
   nav {
