@@ -32,8 +32,7 @@
 
     <link href="styles/normalize.css" rel="stylesheet" />
     <link href="styles/base.css" rel="stylesheet" />
-    <link href="styles/large.css" rel="stylesheet">
-
+    <link href="styles/large.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -55,9 +54,11 @@
 
     <nav>
       <ul class="navMenu">
-        <li ><a href="project-index.html">Home</a></li>
+        <li><a href="project-index.html">Home</a></li>
         <li><a href="project-form.html">Join our Community</a></li>
-        <li class="active"><a href="project-events.html">Upcoming Events</a></li>
+        <li class="active">
+          <a href="project-events.html">Upcoming Events</a>
+        </li>
         <li><a href="#weather">Currrent Weather</a></li>
         <li><a href="#news">Local News</a></li>
       </ul>
@@ -66,7 +67,8 @@
     <main>
       <section class="hero">
         <div class="hero-container">
-          <img class="hero-img"
+          <img
+            class="hero-img"
             src="images/hero-index.webp"
             alt="Tenerife"
             width="640"
@@ -80,18 +82,20 @@
       </section>
       <h1>Upcoming Events</h1>
       <section class="eventContainer">
-      <div class="eventCard">
-        <img>
-        <h2>Fall 2025 Reunion</h2>
-        <button>View Details</button>
-      </div>
-      <div class="eventCard">
-        <h2>Spring 2026 Reunion</h2>
-        <button>View Details</button>
-
-      </div>
-
-    </section>
+        <div class="eventCard">
+          <img />
+          <h2>Fall 2025 Reunion</h2>
+          <button class="modalBtn" id="event01">View Details</button>
+        </div>
+        <div class="eventCard">
+          <h2>Spring 2026 Reunion</h2>
+          <button class="modalBtn" id="event00">View Details</button>
+        </div>
+        <dialog id="modal">
+          <div></div>
+          <button id="closeModal">Close</button>
+        </dialog>
+      </section>
     </main>
     <footer>
       <section>

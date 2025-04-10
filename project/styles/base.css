@@ -119,6 +119,10 @@ li {
     content: "X";
   }
   
+main h1 {
+  padding: 1.5rem 4%;
+}
+
 #newsContainer div{
 border: 1px solid #0d0d0d;
 border-radius: .7rem;
@@ -185,4 +189,8 @@ border-radius: .7rem;
 margin: 1.5rem 4%;
 padding: 1rem .5rem;
 
+}
+
+footer {
+  padding: 1.5rem 4%;
 }
