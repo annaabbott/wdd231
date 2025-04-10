@@ -126,9 +126,63 @@ margin: 1.5rem 4%;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 1rem 0;
+padding: 1rem .5rem;
 }
 
 #newsContainer div img {
     overflow: hidden;
+}
+
+form {
+    padding: 1rem;
+    border: 1px solid #0d0d0d;
+    margin: 1.5rem 4%;
+    border-radius: .7rem;
+}
+
+legend {
+    padding: 0.5rem 0;
+  }
+  
+  label {
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
+  }
+
+  input {
+  /* width: 96%; */
+  border: 1px #0d0d0d solid;
+  border-radius: .7rem;
+  padding: .75rem .25rem;
+}
+
+input[type="checkbox"] {
+  width: 2rem;
+  height: 2%;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  display: inline;
+}
+
+.checkbox {
+  display: inline;
+}
+  
+form button {
+  margin-top: 1rem;
+  border: 1px #0d0d0d solid;
+  border-radius: .7rem;
+  padding: .75rem .25rem;
+
+}
+
+.eventCard {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #0d0d0d;
+border-radius: .7rem;
+margin: 1.5rem 4%;
+padding: 1rem .5rem;
+
 }
