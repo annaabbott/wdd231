@@ -251,6 +251,28 @@ form button {
 border-radius: .7rem;
 margin: 1.5rem 4%;
 padding: 1rem .5rem;
+}
+
+.eventCard button {
+  margin-top: 1rem;
+  width: 50%;
+  text-align: center;
+  justify-self: center;
+  background-color: var(--primary-color);
+  padding: .5rem 1rem;
+  border-radius: .7rem;
+border: none;
+}
+
+#closeModal {
+  margin-top: 1rem;
+  width: 50%;
+  text-align: center;
+  justify-self: center;
+  background-color: var(--primary-color);
+  padding: .5rem 1rem;
+  border-radius: .7rem;
+border: none;
 
 }
 
