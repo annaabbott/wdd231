@@ -43,3 +43,10 @@ if (btn00){
   if (document.getElementById("formResults")) {
     displayFormData()
   }
+
+  const visitCount = document.querySelector(".myVisitCount");
+let numVisits = Number(window.localStorage.getItem("myVisitCount")) || 0;
+console.log(numVisits);
+if (numVisits >= 1) {
+  visitCount.textContent = `Number of visits to our website: ${numVisits}. Thank you for stopping by!`;
+}

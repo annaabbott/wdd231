@@ -216,3 +216,8 @@ padding: 1rem .5rem;
 footer {
   padding: 1.5rem 4%;
 }
+
+footer span {
+  text-align: center;
+  font-style: italic;
+}
