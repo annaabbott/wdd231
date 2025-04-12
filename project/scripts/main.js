@@ -48,6 +48,10 @@ if (value) {
   visitCount.textContent = `Number of visits to our website: ${value}. Thank you for stopping by!`;
   value = value++;
 }
+if (!value) {
+  visitCount.textContent = `This is your first visit to our website. Thank you for stopping by!`;
+  value = value++;
+}
 localStorage.setItem("numVisits", value);
 
 
