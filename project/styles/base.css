@@ -172,6 +172,13 @@ padding: 1rem .5rem;
   color: #0d0d0d;
   text-decoration: none;
   /* border: 1px solid #0d0d0d; */
+  margin-top: 1rem;
+  width: 50%;
+  text-align: center;
+  justify-self: center;
+  background-color: var(--primary-color);
+  padding: .5rem 1rem;
+  border-radius: .7rem;
 
 }
 
@@ -246,6 +253,11 @@ margin: 1.5rem 4%;
 padding: 1rem .5rem;
 
 }
+
+::backdrop {
+  background-color: #c1c1c1;
+}
+
 
 footer {
   padding: 1.5rem 4%;
