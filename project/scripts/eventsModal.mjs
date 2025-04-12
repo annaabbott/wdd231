@@ -1,13 +1,6 @@
 const dialogBoxText = document.querySelector("#modal div");
 
 {
-  /* <h2>Fall 2025 Reunion</h2>
-<p>Date: Oct 4, 2025</p>
-<p>Time: 6-8:30 pm</p>
-<div>
-    <p>Mesa AZ meetinghouse</p>
-    <address>address</address>
-</div> */
 }
 export function createModal0() {
   const modal = document.querySelector("#modal");

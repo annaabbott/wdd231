@@ -55,23 +55,4 @@ if (!value) {
 localStorage.setItem("numVisits", value);
 
 
-// let numVisits = Number(window.localStorage.getItem("myVisitCount")) || 0;
-// console.log(numVisits);
-// if (numVisits >= 1) {
-//   visitCount.textContent = `Number of visits to our website: ${numVisits}. Thank you for stopping by!`;
-// }
-
-// const currentTime = Date.now();
-// if (value) {
-//   value = parseInt(value);
-//   const msTime = currentTime - value;
-//   const days = msTime / 86400000;
-//   if (days < 1) {
-//     visitCount.textContent = `Back so soon! Awesome!`;
-//   } else if (1 < days < 2) {
-//     visitCount.textContent = `You last visited ${days} day ago.`;
-//   } else if (days > 2) {
-//     visitCount.textContent = `You last visited ${days} days ago.`;
-//   }
-// }
 

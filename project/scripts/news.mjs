@@ -23,9 +23,6 @@ function displayResults(data) {
     let headline = document.createElement("h3");
     headline.textContent = `${article.title}`;
     articleDiv.appendChild(headline);
-    // let newsBtn = document.createElement("button");
-    // newsBtn.textContent = `More Information`;
-    // articleDiv.appendChild(newsBtn);
        let descP = document.createElement("p");
        descP.textContent = `${article.description}`;
        articleDiv.appendChild(descP);
@@ -33,10 +30,6 @@ function displayResults(data) {
        articleLink.setAttribute("href", `${article.url}`);
        articleLink.innerText = `Read Article`;
        articleDiv.appendChild(articleLink);
-    //    newsContainer.appendChild(humidity);
-    //    let feelsLike = document.createElement("p");
-    //    feelsLike.textContent = `Feels like: ${data.main.feels_like}\u00b0 F`;
-    //    newsContainer.appendChild(feelsLike);
   });
 }
 
