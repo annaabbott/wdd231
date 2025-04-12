@@ -4,6 +4,11 @@
     justify-content: space-around;
     }
  
+#weather div {
+    padding: 2rem;
+    max-width: 500px;
+}
+
     #newsContainer div {
     margin: 1.5rem 4%;
     display: grid;
@@ -32,19 +37,21 @@ padding: 0;
     grid-column: 2/4;
     grid-row: 3/4;
     color: #0d0d0d;
-    text-decoration: none;
-    border: 1px solid #0d0d0d;
+    /* text-decoration: none; */
+    /* border: 1px solid #0d0d0d; */
     padding: .5rem 1rem;
-    border-radius: .7rem;
+    /* border-radius: .7rem; */
     margin-top: 1rem;
     width: 50%;
     text-align: center;
     justify-self: center;
+    background-color: var(--primary-color);
   }
 
 form {
     max-width: 800px;
 }
+
 
 .eventContainer {
 display: grid;
